@@ -10,7 +10,7 @@ def process_files():
     file_contents = {}
     for file in files:
         try:
-            f = open('file')
+            f = open(file)
             file_contents[os.path.split(file)[1]] = f.read()
             f.close()
         except FileNotFoundError:
