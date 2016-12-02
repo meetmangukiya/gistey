@@ -46,3 +46,17 @@ def create_gist(data):
     end_point = 'https://api.github.com/gists'
     rq = requests.post(end_point, json=data)
     return rq
+
+def construct_data(args):
+    """
+    :param args:
+        The arguments parsed by argparse
+    :returns:
+        `data` dict to be passed to crete the POST request
+    """
+    data = {
+        "public": args.secret,
+        "description": args.description,
+        "files": process_files(args)
+    }
+    return data
