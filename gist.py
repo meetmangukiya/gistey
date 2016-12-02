@@ -5,7 +5,23 @@ from parser import parser
 
 args = parser.parse_args()
 
-def process_files():
+def process_files(args):
+    """
+    :param args:
+        The arguments parsed by argparse
+    :returns:
+        A dict containing file_names as keys and a
+        dict containing a key `content` as the value
+
+    Example return:
+        {
+            "file_name": {
+                "content": {
+                    # file contents
+                }
+            }
+        }
+    """
     files = [os.path.abspath(file) for file in args.files]
     file_contents = {}
     for file in files:
