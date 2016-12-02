@@ -12,3 +12,8 @@ parser.add_argument('-f','--files',
                     nargs='+',
                     help="Files to be uploaded in the gist",
                     action='store')
+
+parser.add_argument('-D', '--no-description',
+                    default=False,
+                    help='Create the file gists without any description',
+                    action='store_true')
