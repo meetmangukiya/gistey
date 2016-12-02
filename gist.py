@@ -6,8 +6,8 @@ import requests
 
 from parser import parser
 
-args = parser.parse_args()
-
+# Processing
+# ----------
 def process_files(args):
     """
     :param args:
@@ -63,3 +63,11 @@ def construct_data(args):
         "files": process_files(args)
     }
     return data
+
+# Execution
+# ---------
+
+args = parser.parse_args()
+
+response = create_gist(construct_data(args))
+print("URL of the gist created: ", response.json()["html_url"])
