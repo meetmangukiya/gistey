@@ -27,7 +27,7 @@ def process_files(args):
     for file in files:
         try:
             f = open(file)
-            file_contents[os.path.split(file)[1]] = f.read()
+            file_contents[os.path.split(file)[1]] = dict(content=f.read())
             f.close()
         except FileNotFoundError:
             print('File "{}"\n\tdoes not exist'.format(file))
