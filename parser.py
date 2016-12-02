@@ -16,4 +16,3 @@ parser.add_argument('-f','--files',
 parser.add_argument('-d', '--description',
                     help='Description for the gist',
                     action='store')
-s
