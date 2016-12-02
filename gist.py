@@ -18,4 +18,4 @@ def process_files():
             should_create = input('Create the gist without this file [Y/n]: ') or 'Y'
             if not should_create == 'Y':
                 sys.exit("gist: exiting ...")
-            return file_contents
+    return file_contents
