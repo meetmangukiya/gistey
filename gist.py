@@ -58,7 +58,7 @@ def construct_data(args):
         `data` dict to be passed to crete the POST request
     """
     data = {
-        "public": args.secret,
+        "public": not args.secret,
         "description": args.description if args.description else '',
         "files": process_files(args)
     }
