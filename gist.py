@@ -59,7 +59,7 @@ def construct_data(args):
     """
     data = {
         "public": args.secret,
-        "description": args.description,
+        "description": args.description if args.description else '',
         "files": process_files(args)
     }
     return data
