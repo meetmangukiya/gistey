@@ -19,3 +19,14 @@ def process_files():
             if not should_create == 'Y':
                 sys.exit("gist: exiting ...")
     return file_contents
+
+def create_gist(data):
+    """
+    :param data:
+        The JSON data to be posted to the API
+    :returns:
+        request object of the POST request made to create the gist
+    """
+    end_point = 'https://api.github.com/gists'
+    rq = requests.post(end_point, json=data)
+    return rq
