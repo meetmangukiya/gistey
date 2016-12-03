@@ -36,7 +36,7 @@ def process_files(args):
             print('File "{}"\n\tdoes not exist'.format(file))
             should_create = input('Create the gist without this file [Y/n]: ') or 'Y'
             if not should_create == 'Y':
-                sys.exit("gist: exiting ...")
+                sys.exit("gistey: exiting ...")
     return file_contents
 
 def create_gist(data):
