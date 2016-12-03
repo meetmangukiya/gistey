@@ -67,7 +67,7 @@ def construct_data(args):
 # Execution
 # ---------
 
-args = parser.parse_args()
-
-response = create_gist(construct_data(args))
-print("URL of the gist created: ", response.json()["html_url"])
+def main():
+    args = parser.parse_args()
+    response = create_gist(construct_data(args))
+    print("URL of the gist created: ", response.json()["html_url"])
