@@ -71,3 +71,6 @@ def main():
     args = parser.parse_args()
     response = create_gist(construct_data(args))
     print("URL of the gist created: ", response.json()["html_url"])
+
+if __name__ == "__main__":
+    main()
