@@ -9,6 +9,7 @@ parser.add_argument('-s', '--secret',
                     action='store_true')
 
 parser.add_argument('-f','--files',
+		    required=True,
                     nargs='+',
                     help="Files to be uploaded in the gist",
                     action='store')
