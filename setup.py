@@ -21,7 +21,7 @@ if __name__ == "__main__":
         packages=['gistey'],
         entry_points = {
             'console_scripts': [
-                'gistey=gistey:main'
+                'gistey=gistey.gistey:main'
             ]
         }
     )
