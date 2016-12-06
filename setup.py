@@ -18,7 +18,7 @@ if __name__ == "__main__":
         url="http://meetmangukiya.github.io",
         install_requires=dependencies,
         license='MIT',
-        py_modules=['gistey', 'ArgumentParser'],
+        packages=['gistey'],
         entry_points = {
             'console_scripts': [
                 'gistey=gistey:main'
