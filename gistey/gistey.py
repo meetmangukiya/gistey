@@ -4,7 +4,7 @@ import json
 
 import requests
 
-from ArgumentParser import parser
+from .ArgumentParser import parser
 
 # Processing
 # ----------
