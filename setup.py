@@ -9,7 +9,7 @@ with open('README.rst') as readme:
 if __name__ == "__main__":
     setup(
         name='gistey',
-        version="0.1.0",
+        version="0.1.1",
         description="Make GitHub gists from cmdline/terminal",
         long_description=long_description,
         author="Meet Mangukiya",
