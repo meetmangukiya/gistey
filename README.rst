@@ -2,6 +2,15 @@
 ``gistey``
 ==========
 
+Installation:
+-------------
+
+- Using pip
+
+  ``pip install gistey``
+
+  On linux systems you might require to use `sudo` 
+
 Usage:
 ------
 
