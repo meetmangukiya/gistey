@@ -6,10 +6,13 @@ with open('requirements.txt') as req:
 with open('README.rst') as readme:
     long_description = readme.read()
 
+with open("tmp_version.txt") as v:
+    VERSION = v.read().rstrip()
+
 if __name__ == "__main__":
     setup(
         name='gistey',
-        version="0.1.1",
+        version=VERSION,
         description="Make GitHub gists from cmdline/terminal",
         long_description=long_description,
         author="Meet Mangukiya",
