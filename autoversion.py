@@ -12,7 +12,7 @@ parser.add_argument('--type', '-t',
 args = parser.parse_args()
 
 now = time.gmtime()
-dev_string = 'dev' + str(now.tm_year) + str(now.tm_month) + str(now.tm_day) + str(now.tm_hour) + str(now.tm_minute)
+dev_string = 'dev' + str(now.tm_year) + str(now.tm_mon) + str(now.tm_mday) + str(now.tm_hour) + str(now.tm_min)
 
 with open("stable_version.txt") as version:
     stable_version = version.read().rstrip()
