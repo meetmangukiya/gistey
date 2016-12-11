@@ -1,0 +1,7 @@
+[Default]
+bears = SpaceConsistencyBear, LineLengthBear
+files = *.py, gistey/*.py, tests/*.py
+use_spaces = True
+
+[python]
+bears = PEP8Bear, PyFlakesBear
