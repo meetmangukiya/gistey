@@ -1,6 +1,5 @@
 import os
 import sys
-import json
 
 import requests
 
@@ -8,6 +7,8 @@ from .ArgumentParser import parser
 
 # Processing
 # ----------
+
+
 def process_files(args):
     """
     :param args:
@@ -34,10 +35,12 @@ def process_files(args):
             f.close()
         except FileNotFoundError:
             print('File "{}"\n\tdoes not exist'.format(file))
-            should_create = input('Create the gist without this file [Y/n]: ') or 'Y'
+            should_create = input(
+                'Create the gist without this file [Y/n]: ') or 'Y'
             if not should_create == 'Y':
                 sys.exit("gistey: exiting ...")
     return file_contents
+
 
 def create_gist(data):
     """
@@ -49,6 +52,7 @@ def create_gist(data):
     end_point = 'https://api.github.com/gists'
     rq = requests.post(end_point, json=data)
     return rq
+
 
 def construct_data(args):
     """

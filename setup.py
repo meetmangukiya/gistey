@@ -23,7 +23,7 @@ if __name__ == "__main__":
         install_requires=dependencies,
         license='MIT',
         packages=['gistey'],
-        entry_points = {
+        entry_points={
             'console_scripts': [
                 'gistey=gistey.gistey:main'
             ]

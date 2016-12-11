@@ -5,14 +5,15 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument('--type', '-t',
                     action='store',
-                    required=True, 
+                    required=True,
                     choices=['dev', 'release'])
 
 # TODO: Implement auto stable_version release
 args = parser.parse_args()
 
 now = time.gmtime()
-dev_string = 'dev' + str(now.tm_year) + str(now.tm_mon) + str(now.tm_mday) + str(now.tm_hour) + str(now.tm_min)
+dev_string = 'dev' + str(now.tm_year) + str(now.tm_mon) + \
+                         str(now.tm_mday) + str(now.tm_hour) + str(now.tm_min)
 
 with open("stable_version.txt") as version:
     stable_version = version.read().rstrip()
