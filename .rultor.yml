@@ -7,6 +7,11 @@ install:
 
 merge:
   fast-forward: only
+  script: 
+    - bash release.sh
+
+decrypt:
+  rultor_secrets.sh: "repo/rultor_secrets.sh.asc"
 
 docker:
   image: "coala/rultor-python"
