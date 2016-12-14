@@ -7,7 +7,7 @@ python3 autoversion.py --type dev
 python3 setup.py bdist_wheel sdist
 
 
-source rultor_secrets.sh
+source ../rultor_secrets.sh
 
 set +e
 twine upload dist/* -u "$USER" -p "$PWD"
