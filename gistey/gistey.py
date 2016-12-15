@@ -71,6 +71,7 @@ def construct_data(args):
 # Execution
 # ---------
 
+
 def main():
     args = parser.parse_args()
     response = create_gist(construct_data(args))

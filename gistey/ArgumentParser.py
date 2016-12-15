@@ -1,7 +1,7 @@
 import argparse
 
-parser = argparse.ArgumentParser(description="Create github gists from cmdline",
-                                 prog="gistey")
+parser = argparse.ArgumentParser(description="Create github gists "
+                                             "from cmdline", prog="gistey")
 
 parser.add_argument('-s', '--secret',
                     default=False,
